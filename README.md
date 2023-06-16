@@ -34,7 +34,7 @@ Please download the raw video from [SoccerNet](https://www.soccer-net.org/data) 
 - data analysis
 
 
-### Train the KGVC model
+## Train the KGVC model
 
 We provide the source code to build a KGVC model based ALPRO and a Transformer decoder. Please see the code in `models` dir for details. The code includes:
 
