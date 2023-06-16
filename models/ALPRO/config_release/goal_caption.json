@@ -1,0 +1,59 @@
+{
+  "train_datasets": [
+    {
+      "name": "goal_caption",
+      "txt": {
+        "goal_caption": "/path/to/train.caption_coco_format.json"
+      },
+      "img": "/path/to/clips"
+    }
+  ],
+  "val_datasets": [
+    {
+      "name": "goal_caption",
+      "txt": {
+        "goal_caption": "/path/to/val.caption_coco_format.json"
+      },
+      "img": "/path/to/clips"
+    }
+  ],
+  "max_enc_txt_len": 20,
+  "max_dec_txt_len": 300,
+  "crop_img_size": 224,
+  "resize_size": 256,
+  "img_pixel_mean": [0.48145466, 0.4578275, 0.40821073], 
+  "img_pixel_std": [0.26862954, 0.26130258, 0.27577711],
+  "img_input_format": "RGB",
+  "train_n_clips": 1,
+  "num_frm": 16,
+  "model_config": "config_release/base_model.json",
+  "enc_tokenizer_dir": "/data/MODELS/bert-base-uncased/",
+  "video_dec_model": "gpt2",
+  "video_dec_cfg": "config_release/decoder.json",
+  "visual_model_cfg": "config_release/timesformer_divst_8x32_224_k600_gc.json",
+  "e2e_weights_path": "output/pretrain/alpro_pretrained_ckpt.pt",
+  "train_batch_size": 1,
+  "val_batch_size": 1,
+  "gradient_accumulation_steps": 2,
+  "num_train_epochs": 50,
+  "min_valid_steps": 50,
+  "num_valid": 30,
+  "learning_rate": 5e-5,
+  "lr_visual_backbone": 1e-5,
+  "lr_textual_backbone": 1e-5,
+  "lr_decoder_backbone": 1e-5,
+  "weight_decay": 1e-3,
+  "decay": "linear",
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "grad_norm": 20.0,
+  "cnn_lr_decay": "linear",
+  "seed":42,
+  "fp16": 0,
+  "save_steps_ratio": 0.05,
+  "classifier": "mlp",
+  "cls_hidden_scale": 2,
+  "task": "goal_caption",
+  "num_workers": 4
+}

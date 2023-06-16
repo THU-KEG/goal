@@ -1,0 +1,10 @@
+sents_per_clip: 1.0
+words_per_clip: 7.857577917449621
+words_per_sent: 7.857577917449621
+words_per_sec: 1212660000000000.0
+verbs_per_sec: 1.72
+syntactic_complexity: 6.43
+vocab_size: 2582
+words coverage of each clip: 0.00
+Total # of clips: 0
+Total # of sentences: 15433

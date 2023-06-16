@@ -1,0 +1,18 @@
+dur_per_clip: 10.312099317749691
+sents_per_clip: 2.463259143272565
+words_per_clip: 21.667263169667823
+words_per_sent: 8.79617689792953
+words_per_sec: 2.101149581867686
+verbs_per_sec: 1.0127118644067796
+adjs_per_sec: 0.4279661016949153
+advs_per_sec: 0.7330508474576272
+nouns_per_sec: 1.1567796610169492
+syntactic_complexity: 6.733050847457627
+vocab_size: 13870
+words coverage of each clip: 0.81
+Total # of clips: 8941
+Total # of sentences: 22024
+Ratio of sentence lengths: {"5": 0.6038412640755539, "10": 0.29776607337450056, "15": 0.14425172539048312} 
+Variance of sentence lengths: 52.74682337880519 
+Standard-variance of sentence lengths: 7.2627008322527775 
+Standard-variance of sentence lengths: {"5": 0.6038412640755539, "10": 0.29776607337450056, "15": 0.14425172539048312} 

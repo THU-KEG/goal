@@ -1,0 +1,66 @@
+{
+    "train_datasets": [
+      {
+        "name": "coco",
+        "ann": "/data/qiji/DATA/alpro/fla/coco_anns_interleaved.json",
+        "txt": null,
+        "img": "/data/qiji/DATA/coco/train2014"
+      }
+    ],
+    "val_datasets": [
+      {
+        "name": "coco",
+        "ann": "/data/qiji/DATA/alpro/fla/coco_anns_interleaved.json",
+        "txt": null,
+        "img": "/data/qiji/DATA/coco/val2014"
+      }
+    ],
+
+    "img_pixel_mean": [0.48145466, 0.4578275, 0.40821073], 
+    "img_pixel_std": [0.26862954, 0.26130258, 0.27577711],
+    "img_input_format": "RGB",
+    "crop_img_size": 224,
+    "resize_size": 256,
+
+    "model_type": "pretrain",
+    "text_enc_model": "bert",
+    "text_enc_cfg": "config_release/encoder_text_fla.json",
+    "visual_enc_model": "VisionTransformer",
+    "visual_enc_cfg": "config_release/encoder_visual_fla.json",
+    "text_dec_model": "gpt2",
+    "text_dec_cfg": "config_release/decoder_fla.json",
+    "itc_token_type": "cls",
+
+    "max_enc_txt_len": 20,
+    "max_dec_txt_len": 300,
+    "n_visual_latents": 64,
+    "n_text_latents": 64,
+
+    "use_itm": 1,
+    "use_mlm": 1,
+    "use_itc": 1,
+
+    "train_batch_size": 16,
+    "val_batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "num_train_epochs": 10,
+    "min_valid_steps": 10,
+    "num_valid": 10,
+    "learning_rate": 1e-4,
+    "decay": "linear",
+    "optim": "adamw",
+    "betas": [0.9, 0.98],
+    "dropout": 0.1,
+    "weight_decay": 1e-3,
+    "grad_norm": 20.0,
+    "warmup_ratio": 0.05,
+
+
+    "log_interval": 100,
+    "save_steps_ratio": 0.01,
+    "n_workers": 4,
+    "seed":42,
+    "fp16": 0,
+    "debug": false
+  }
+  

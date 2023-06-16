@@ -1,0 +1,18 @@
+.vscode 
+
+# script
+tmp_all/script/
+
+
+# Project-related   #
+tmp*/
+cache/*
+
+# compiled files #
+*.pyc
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?

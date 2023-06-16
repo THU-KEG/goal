@@ -1,0 +1,26 @@
+{
+  "transformer":{
+    "model": "transformer",
+    "max_dec_length": 300,
+    "n_dec_layers": 4,
+    "d_model": 768,
+    "n_head": 8,
+    "dim_feedforward": 2048,
+    "dropout": 0.1,
+    "activation": "relu",
+    "layer_norm_eps": 1e-5,
+    "normalize_before": true,
+    "return_intermediate": false,
+    "tokenizer_dir": "/data/MODELS/bert-base-uncased"
+  },
+  "gpt2":{
+    "model": "gpt2",
+    "config_file": "/data/MODELS/gpt2/config.json",
+    "vocab_file": "/data/MODELS/gpt2/vocab.json",
+    "merges_file": "/data/MODELS/gpt2/merges.txt",
+    "pretrained_dir": "/data/MODELS/gpt2/",
+    "max_dec_length": 300,
+    "d_model": 768,
+    "freeze_pretrained": true
+  }
+}
